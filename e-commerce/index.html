@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Product Page</title>
+        <style>
+            .product-title{
+                color:blueviolet;
+                font-size: 45px;
+                font-style: italic;
+            }
+            .product-page-container .btn{
+                border:0;
+                padding:10px;
+                border-radius: 5px;
+                color:antiquewhite;
+                background-color: green;
+            }
+            .btn{
+                background-color: salmon;
+            }
+            /*.btn--shifted{
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border: 3px solid black;
+                margin-left: 93px;
+                margin-top: 128px;
+            }*/
+
+            @media only screen and (max-width:500px){
+                .btn{
+                    width:100%;
+                    margin-top:10px;
+                }
+                .product-price{
+                    color:red;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="product-page-container">
+            <h1 class="product-title">Fantastic Doge T-shirt</h1>
+            <h2 class="product-price">RM19.99</h2>
+            <div class="product-description">
+                <p>Doge T shirt is the best in town</p>
+            </div>
+            <button class="btn">ADD TO CART</button>
+            <button class="btn btn--shifted">BUY NOW</button>
+        </div>
+    </body>
+</html>
